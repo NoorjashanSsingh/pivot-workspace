@@ -1,0 +1,45 @@
+{
+  "name": "pivot-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings=0",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoorjashanSsingh/pivot-workspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoorjashanSsingh/pivot-workspace/issues"
+  },
+  "homepage": "https://github.com/NoorjashanSsingh/pivot-workspace#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*": {
+      "{js,jsx,ts,tsx}": "eslint --fix",
+      "{js,jsx,ts,tsx,json,md}": "prettier --write"
+    }
+  }
+}
